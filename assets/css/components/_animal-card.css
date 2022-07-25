@@ -2,12 +2,12 @@
   background-color: var(--soft-gray-bg);
   color: var(--gray);
   column-gap: 16px;
-  min-height: 200px;
   display: grid;
   grid-template-columns: auto 1fr;
   margin-bottom: 16px;
   padding: 24px 0 24px 24px;
   box-sizing: border-box;
+  width: 100%;
 }
 
 .animal-card__title {
@@ -37,5 +37,11 @@
   display: block;
   font-size: .625rem;
   margin-top: 3px;
+}
+
+@media screen and (min-width: 768px) {
+  .animal-card {
+    min-width: 350px;
+  }
 }
 

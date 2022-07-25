@@ -16,3 +16,14 @@
 .input--login-password {
   margin-bottom: 8px;
 }
+
+@media screen and (min-width: 768px) {
+  .main__text--login {
+    font-size: 1.125rem;
+    margin: 40px 0;
+  }
+
+  .forgot-password {
+    font-size: .875rem;
+  }
+}

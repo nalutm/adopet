@@ -8,6 +8,7 @@
 @import url(_login.css);
 @import url(_home.css);
 @import url(./components/_animal-card.css);
+@import url(./components/_form.css);
 
 body {
   color: var(--blue);
@@ -20,20 +21,16 @@ a {
   text-decoration: none;
 }
 
-.header-container {
-  background: url(../img/bg/bg-top.svg) no-repeat;
-  z-index: 10;
-  min-height: 275px;
-  position: relative;
-}
-
 .container {
   display: flex;
   flex-direction: column;
-  height: 100%;
   position: absolute;
   top: 180px;
   width: 100%;
+}
+
+.container--welcome {
+  height: 95%;
 }
 
 .main {
@@ -53,10 +50,25 @@ a {
   height: 100vh;
 }
 
-.illustration {
-  background: url(../img/paws.svg) no-repeat;
-  height: 173px;
-  position: absolute;
-  right: 0;
-  width: 134px;
+@media screen and (min-width: 768px) {
+  .container {
+    top: 275px;
+  }
+
+  .container--welcome {
+    height: 85%;
+  }
+
+  .main {
+    min-height: 755px;
+  }
+  
+  .main-bg, 
+  .welcome {
+    background: url(../img/bg/bg-rigth-tablet.svg) right -3% no-repeat;
+  }
+
+  .main__text {
+    line-height: 26px;
+  }
 }

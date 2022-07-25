@@ -6,3 +6,32 @@
 .animals-list {
   width: 100%;
 }
+
+@media screen and (min-width: 768px) {
+  .main__text--home {
+    font-size: 1.125rem;
+    width: 100%;
+  }
+
+  .main__text--home--desktop {
+    display: block;
+  }
+
+  .animals-list {
+    column-gap: 16px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main__text--home--desktop {
+    display: inline;
+  }
+  
+  .animals-list {
+    grid-template-columns: repeat(3, auto);
+
+  }
+}

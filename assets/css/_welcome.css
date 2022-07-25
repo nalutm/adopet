@@ -20,20 +20,58 @@
 }
 
 .welcome__text {
-  font-weight: 400;
-  font-family: var(--font);
   line-height: 24px;
   margin-bottom: 32px;
 }
 
+.welcome__text--desktop {
+  display: none;
+}
+
 .welcome__illustration {
   background: url(../img/illustration1.png) no-repeat center / cover;
-  height: 313px;
+  height: 320px;
+  margin-top: 18px;
   width: 255px;
 }
 
 .welcome__footer {
   position: absolute;
-  bottom: -40px;
+  bottom: -88px;
   z-index: 100;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    height: 60px;
+    width: 250px;
+  }
+
+  .welcome__content {
+    width: 345px;
+  }
+
+  .welcome__title {
+    font-size: 1.75rem;
+    margin: 40px 0 24px;
+  }
+
+  .welcome__text {
+    display: none;
+  }
+
+  .welcome__text--desktop {
+    display: block;
+    font-size: 1.125rem;
+    line-height: 26px;
+    margin-bottom: 38px;
+  }
+
+  .welcome__illustration {
+    margin-top: 34px;
+  }
+
+  .welcome__footer {
+    bottom: -175px;
+  }
 }

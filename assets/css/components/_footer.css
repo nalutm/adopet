@@ -1,13 +1,24 @@
 .footer {
   align-items: center;
-  background-color: var(--green);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   min-height: 104px;
+  justify-content: center;
   width: 100%;
 }
 
 .footer__text {
+  background-color: var(--green);
   color: var(--white);
+  display: block;
+  text-align: center;
   font-size: 1rem;
+  line-height: 104px;
+  width: 100%;
+}
+
+.footer__text--welcome {
+  line-height: 104px;
+  position: absolute;
+  top: 315px;
 }
