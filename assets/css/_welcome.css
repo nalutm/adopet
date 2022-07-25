@@ -1,0 +1,39 @@
+.welcome-page {
+  background-color: var(--blue);
+}
+
+.welcome {
+  background: url(../img/bg/bg-rigth.svg) 100% 3% no-repeat;
+  color: var(--white);
+}
+
+.welcome__content {
+  text-align: center;
+  width: 248px;
+}
+
+.welcome__title {
+  font-family: var(--welcome);
+  font-size: 1.625rem;
+  font-weight: 500;
+  margin: 24px 0 16px;
+}
+
+.welcome__text {
+  font-weight: 400;
+  font-family: var(--font);
+  line-height: 24px;
+  margin-bottom: 32px;
+}
+
+.welcome__illustration {
+  background: url(../img/illustration1.png) no-repeat center / cover;
+  height: 313px;
+  width: 255px;
+}
+
+.welcome__footer {
+  position: absolute;
+  bottom: -40px;
+  z-index: 100;
+}

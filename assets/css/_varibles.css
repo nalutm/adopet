@@ -1,0 +1,15 @@
+:root {
+  --bg-gray: #F7F7F7;
+  --blue: #3772FF;
+  --coral: #FC7071;
+  --cream: #FCF0E3;
+  --gray: #737380;
+  --green: #36D6AD;
+  --btn-hover: #FF9D9E;
+  --soft-gray: #BCBCBC; 
+  --soft-gray-bg: #f7f7f7;
+  --white: #FFF;
+
+  --welcome: 'IBM Plex Sans', sans-serif;
+  --font: 'Poppins', sans-serif;
+}

@@ -1,0 +1,62 @@
+@import url(_reset.css);
+@import url(_varibles.css);
+@import url(./components/_header.css);
+@import url(./components/_footer.css);
+@import url(./components/_btn.css);
+@import url(_welcome.css);
+@import url(_registration.css);
+@import url(_login.css);
+@import url(_home.css);
+@import url(./components/_animal-card.css);
+
+body {
+  color: var(--blue);
+  font-family: var(--font);
+  font-weight: 400;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-container {
+  background: url(../img/bg/bg-top.svg) no-repeat;
+  z-index: 10;
+  min-height: 275px;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: absolute;
+  top: 180px;
+  width: 100%;
+}
+
+.main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.main__text {
+  line-height: 21px;
+  text-align: center;
+}
+
+.main-bg {
+  background: url(../img/bg/bg-left.svg) -7% 65% no-repeat;
+  height: 100vh;
+}
+
+.illustration {
+  background: url(../img/paws.svg) no-repeat;
+  height: 173px;
+  position: absolute;
+  right: 0;
+  width: 134px;
+}

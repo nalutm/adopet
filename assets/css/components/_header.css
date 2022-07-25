@@ -1,0 +1,20 @@
+.menu {
+  left: 48px;
+  position: absolute;
+  top: 48px;
+  z-index: 100;
+}
+
+.menu__list {
+  align-items: center;
+  display: flex;
+  gap: 58px;
+}
+
+.menu__icon:hover {
+  cursor: pointer;
+}
+
+.menu__icon--user {
+  margin-left: 76px;
+}

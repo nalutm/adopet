@@ -1,0 +1,48 @@
+.registration__question {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.main__text--registration {
+  margin: 24px 0;
+  width: 312px;
+}
+
+.form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 540px;
+}
+
+.label {
+  color: var(--gray);
+  margin-bottom: 4px;
+}
+
+.input {
+  background-color: var(--soft-gray-bg);
+  border: none;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  height: 40px;
+  width: 312px;
+}
+
+.input--registration {
+  margin-bottom: 20px;
+}
+
+.input--password {
+  background: url(../img/icon-password.svg) 95% no-repeat var(--soft-gray-bg);
+}
+
+.input::placeholder {
+  color: var(--soft-gray);
+  font-size: .75rem;
+  text-align: center;
+}
+
+.btn--form {
+  border: none;
+}

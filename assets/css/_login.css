@@ -1,0 +1,18 @@
+.main__text--login {
+  margin: 55px 0 40px 0;
+}
+
+.forgot-password {
+  color: var(--coral);
+  font-size: .75rem;
+  margin-bottom: 24px;
+  text-decoration: underline;
+}
+
+.input--login {
+  margin-bottom: 24px;
+}
+
+.input--login-password {
+  margin-bottom: 8px;
+}

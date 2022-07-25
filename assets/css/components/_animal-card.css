@@ -1,0 +1,41 @@
+.animal-card {
+  background-color: var(--soft-gray-bg);
+  color: var(--gray);
+  column-gap: 16px;
+  min-height: 200px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  margin-bottom: 16px;
+  padding: 24px 0 24px 24px;
+  box-sizing: border-box;
+}
+
+.animal-card__title {
+  color: var(--blue);
+  font-weight: 600;
+}
+
+.animal-card__description {
+  font-size: .875rem;
+  line-height: 20px;
+  margin: 8px 0 30px;
+}
+
+.animal-card__city {
+  display: block;
+  font-size: .75rem;
+  margin-bottom: 8px;
+}
+
+.animal-card__message {
+  align-items: flex-start;
+  display: flex;
+  gap: 8px;
+}
+
+.animal-card__message-text {
+  display: block;
+  font-size: .625rem;
+  margin-top: 3px;
+}
+
