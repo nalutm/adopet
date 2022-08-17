@@ -9,6 +9,7 @@
 @import url(_home.css);
 @import url(./components/_animal-card.css);
 @import url(./components/_form.css);
+@import url(./components/_message.css);
 
 body {
   color: var(--blue);
@@ -56,7 +57,7 @@ a {
   }
 
   .container--welcome {
-    height: 85%;
+    height: 90%;
   }
 
   .main {
