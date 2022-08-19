@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/base.css">
+</head>
+
+<body>
+  <header class="header header--main">
+    <div class="header__container">
+      <a href="./index.html"><img src="./assets/img/logo.svg" alt="Logo Adopet" class="header-logo"></a>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item"><a href="./home.html" class="menu__link"><img src="./assets/img/menu/home.svg" alt="Ícone da página inicial" class="menu__icon"></a></li>
+          <li class="menu__item"><a href="./message.html" class="menu__link"><img src="./assets/img/menu/msg.svg" alt="Ícone de mensagem" class="menu__icon"></a></li>
+          <li class="menu__item"><a href="./profile.html" class="menu__link"><img src="./assets/img/profile.png" alt="Ícone de perfil" class="menu__icon menu__icon--user"></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="container">
+    <main class="main main-message-bg">
+      <p class="main__text main__text--message"> Esse é o perfil que aparece para responsáveis ou ONGs que recebem sua mensagem.</p>
+      <form class="form__message" action="">
+        <h2 class="form__title-profile">Perfil</h2>
+        <label for="photo" class="label">Foto</label>
+        <img src="./assets/img/profile.png" alt="Foto de perfil da usuária" class="profile__img">
+        <a class="profile__img-edit">Clique na foto para editar </a>
+        <label for="name" class="label">Nome</label>
+        <input id="name" type="text" class="input--form-message input--form-profile " placeholder="Insira seu nome completo" value="Joana Magalhães">
+        <label for="phone" class="label">Telefone</label>
+        <input id="phone" type="tel" class="input--form-message input--form-profile" placeholder="Insira seu telefone e/ou whatsapp" value="55 11 XXXXXXXXX">
+        <label for="city" class="label">Cidade</label>
+        <input id="city" type="text" class="input--form-message input--form-profile" value="São Paulo">
+        <label for="about-me" class="label">Sobre</label>
+        <textarea name="about-me" id="about-me" cols="30" rows="10" class="input--form-message textarea input--form-profile"></textarea>
+        <input type="button" value="Salvar" class="btn btn--form btn--form-message">
+      </form>
+    </main>
+    <footer class="footer">
+      <span class="footer__text">2022 - Desenvolvido por Alura.</span>
+    </footer>
+  </div>
+</body>
+
+</html>

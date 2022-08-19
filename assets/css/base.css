@@ -10,6 +10,7 @@
 @import url(./components/_animal-card.css);
 @import url(./components/_form.css);
 @import url(./components/_message.css);
+@import url(./_profile.css);
 
 body {
   color: var(--blue);

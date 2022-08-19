@@ -1,0 +1,26 @@
+.form__title-profile {
+  color: var(--gray);
+  font-size: 21px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.profile__img {
+  height: 80px;
+  margin: 0 auto;
+  width: 80px;
+}
+
+.profile__img-edit {
+  color: var(--coral);
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.input--form-profile {
+  color: var(--gray);
+  font-size: 14px;
+}
