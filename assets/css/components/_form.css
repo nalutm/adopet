@@ -24,7 +24,7 @@
 }
 
 .input--password {
-  background: url(../img/icon-password.svg) 95% no-repeat var(--soft-gray-bg);
+  background: url(../../img/icons/password-icon.svg) 95% no-repeat var(--soft-gray-bg);
 }
 
 .input::placeholder {
