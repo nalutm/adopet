@@ -55,7 +55,7 @@ function validatePassword(input) {
   const password = document.querySelector('[data-input="password"]').value;
   let msg = '';
 
-  if (input.value !== password) {
+  if (input.value && input.value !== password) {
     msg = 'A senha não é igual';
   } 
 

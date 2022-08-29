@@ -1,0 +1,16 @@
+{
+  "profile": [
+    {
+      "email": "nayara.luiza21@gmail.com",
+      "name": "Nayara Luiza",
+      "password": "123@Abc",
+      "id": 1
+    },
+    {
+      "email": "juarezmoraes11@gmail.com",
+      "name": "Juarez Moraes",
+      "password": "123#Cbc",
+      "id": 2
+    }
+  ]
+}
