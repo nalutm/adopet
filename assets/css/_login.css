@@ -5,17 +5,17 @@
 .forgot-password {
   color: var(--coral);
   font-size: .75rem;
-  margin-bottom: 24px;
+  margin: 20px 0;
   text-decoration: underline;
 }
 
-.input--login {
+/* .input--login {
   margin-bottom: 24px;
-}
+} */
 
-.input--login-password {
+/* .input--login-password {
   margin-bottom: 8px;
-}
+} */
 
 @media screen and (min-width: 768px) {
   .main__text--login {

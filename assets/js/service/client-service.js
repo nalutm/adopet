@@ -1,8 +1,4 @@
-function httpRequest() {
-  return fetch('http://localhost:3000/profile').then(r => r.json()).then(r => console.log(r));
-}
-
-function newProfile(email, name, password) {
+const newProfile = (email, name, password) => {
   return fetch('http://localhost:3000/profile', {
     method: 'POST',
     headers: {
@@ -17,7 +13,12 @@ function newProfile(email, name, password) {
   .then(r => r.body);
 }
 
+const validateLogin = () => {
+  return fetch('http://localhost:3000/profile')
+  .then(r => r.json());
+}
+
 export const clientService = {
-  httpRequest,
-  newProfile
+  newProfile,
+  validateLogin
 }

@@ -19,7 +19,8 @@ const errorMsg = {
   },
   password: {
     valueMissing: 'O campo de senha não pode estar vazio',
-    patternMismatch: 'A senha deve conter entre 6 a 10 caracteres, deve conter pelo menos uma letra maiúscula, um número e um símbolo.'
+    patternMismatch: 'A senha deve conter entre 6 a 10 caracteres, deve conter pelo menos uma letra maiúscula, um número e um símbolo.',
+    customError: 'Usuário ou senha inválidos.'
   },
   confirmPassword: {
     valueMissing: 'O campo de confirmar a senha não pode estar vazio',
@@ -28,13 +29,12 @@ const errorMsg = {
 }
 
 const validators = {
-  // email: input =>  validate(input),
   confirmPassword: input => validatePassword(input)
 }
 
 //Função genérica que será chamada para todos os inputs e fazer uma verificação em relação a qual é o tipo de input para saber qual verificação chamar 
 
-export function validate(input, div) {
+export function validate(input) {
   const inputType = input.dataset.input;
 
   if (validators[inputType]) {
@@ -62,7 +62,7 @@ function validatePassword(input) {
   input.setCustomValidity(msg);
 }
 
-function showErrorMsg(inputType, input) {
+export function showErrorMsg(inputType, input) {
   let msg = '';
   errorTypes.forEach(errorType => {
     if (input.validity[errorType]) {
