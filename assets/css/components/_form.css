@@ -29,6 +29,7 @@
 
 .input--container-password {
   position: relative;
+  text-align: center;
 }
 
 .show-password-icon {
