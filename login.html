@@ -35,8 +35,11 @@
         </div>
         <div class="input--container">
           <label for="" class="label">Senha</label>
-          <input type="password" class="input input--password input--login-password" placeholder="Crie uma senha" data-input="password" required>
-          <span class="inactive">Esse campo não está válido!</span>
+          <div class="input--container-password" data-password="container">
+            <div class="show-password-icon" data-password="icon"></div>
+            <input type="password" class="input input--password input--login-password" placeholder="Crie uma senha" data-input="password" required>
+            <span class="inactive">Esse campo não está válido!</span>
+          </div>
           <a href="#" class="forgot-password">Esqueci minha senha</a>
         </div>
         <input type="submit" value="Entrar" class="btn btn--form" data-form="submit">
