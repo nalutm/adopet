@@ -41,7 +41,10 @@
 }
 
 .menu__icon--user {
+  border-radius: 100%;
+  height: 64px;
   margin-left: 76px;
+  width: 64px;
 }
 
 @media screen and (min-width: 768px) {

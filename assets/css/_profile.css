@@ -7,20 +7,24 @@
 }
 
 .profile__img {
+  border-radius: 100%;
   height: 80px;
   margin: 0 auto;
   width: 80px;
 }
 
-.profile__img-edit {
+.input--form-profile {
+  color: var(--gray);
+  font-size: 14px;
+}
+
+.profile__chage-img {
+  align-self: center;
   color: var(--coral);
   cursor: pointer;
   font-size: 12px;
   line-height: 24px;
   text-align: center;
-}
-
-.input--form-profile {
-  color: var(--gray);
-  font-size: 14px;
+  padding: 6px 0;
+  width: 35%;
 }

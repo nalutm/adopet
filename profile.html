@@ -20,7 +20,7 @@
         <ul class="menu__list">
           <li class="menu__item"><a href="./home.html" class="menu__link"><img src="./assets/img/menu/home.svg" alt="Ícone da página inicial" class="menu__icon"></a></li>
           <li class="menu__item"><a href="./message.html" class="menu__link"><img src="./assets/img/menu/msg.svg" alt="Ícone de mensagem" class="menu__icon"></a></li>
-          <li class="menu__item"><a href="./profile.html" class="menu__link"><img src="./assets/img/profile.png" alt="Ícone de perfil" class="menu__icon menu__icon--user"></a></li>
+          <li class="menu__item"><a href="./profile.html" class="menu__link"><img src="./assets/img/profile.png" alt="Ícone de perfil" class="menu__icon menu__icon--user" data-profile></a></li>
         </ul>
       </nav>
     </div>
@@ -31,8 +31,11 @@
       <form class="form__message" action="">
         <h2 class="form__title-profile">Perfil</h2>
         <label for="photo" class="label">Foto</label>
-        <img src="./assets/img/profile.png" alt="Foto de perfil da usuária" class="profile__img">
-        <a class="profile__img-edit">Clique na foto para editar </a>
+        <img src="./assets/img/profile.png" alt="Foto de perfil da usuária" class="profile__img" data-profile>
+        <input id="uploadPhoto" type="file" accept="image/*" style="display: none" data-profile="avatar"/>
+        <label for="uploadPhoto" class="profile__chage-img">
+          Clique na foto para editar
+        </label> 
         <label for="name" class="label">Nome</label>
         <input id="name" type="text" class="input--form-message input--form-profile " placeholder="Insira seu nome completo" value="Joana Magalhães">
         <label for="phone" class="label">Telefone</label>
@@ -48,6 +51,7 @@
       <span class="footer__text">2022 - Desenvolvido por Alura.</span>
     </footer>
   </div>
+  <script src="assets/js/change-profile-avatar.js"></script>
 </body>
 
 </html>
