@@ -29,21 +29,34 @@
     <main class="main main-message-bg">
       <p class="main__text main__text--message"> Envie uma mensagem para a pessoa ou instituição que está cuidando do animal:</p>
       <form class="form__message" action="">
-        <label for="name" class="label">Nome</label>
-        <input id="name" type="text" class="input--form-message" placeholder="Insira seu nome completo">
-        <label for="phone" class="label">Telefone</label>
-        <input id="phone" type="tel" class="input--form-message" placeholder="Insira seu telefone e/ou whatsapp">
-        <label for="name" class="label">Nome do animal</label>
-        <input id="name" type="text" class="input--form-message" placeholder="Por qual animal você se interessou?">
-        <label for="message" class="label">Mensagem</label>
-        <textarea name="message" id="message" cols="30" rows="10" class="input--form-message textarea" placeholder="Escreva sua mensagem."></textarea>
-        <input type="button" value="Enviar" class="btn btn--form btn--form-message">
+        <div class="input--container">
+          <label for="name" class="label">Nome</label>
+          <input id="name" type="text" class="input--form-message" placeholder="Insira seu nome completo" data-input="name" required>
+          <span class="inactive">Esse campo não está válido!</span>
+        </div>
+        <div class="input--container">
+          <label for="phone" class="label">Telefone</label>
+          <input id="phone" type="tel" class="input--form-message" placeholder="Insira seu telefone e/ou whatsapp" data-input="phone" pattern="(?:\+?55\s?)?(?:\(?\d{2}\)?[-\s]?)?\d{4,5}[-\s]?\d{4}" required>
+          <span class="inactive">Esse campo não está válido!</span>
+        </div>
+        <div class="input--container">
+          <label for="name" class="label">Nome do animal</label>
+          <input id="name" type="text" class="input--form-message" placeholder="Por qual animal você se interessou?" data-input="animalName" required>
+          <span class="inactive">Esse campo não está válido!</span>
+        </div>
+        <div class="input--container">
+          <label for="message" class="label">Mensagem</label>
+          <textarea name="message" id="message" cols="30" rows="10" class="input--form-message textarea" placeholder="Escreva sua mensagem." data-input="message" required></textarea>
+          <span class="inactive">Esse campo não está válido!</span>
+        </div>
+        <input type="submit" value="Enviar" class="btn btn--form btn--form-message">
       </form>
     </main>
     <footer class="footer">
       <span class="footer__text">2022 - Desenvolvido por Alura.</span>
     </footer>
   </div>
+  <script type="module" src="assets/js/message-validation.js"></script>
 </body>
 
 </html>
