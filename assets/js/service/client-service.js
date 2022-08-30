@@ -18,7 +18,16 @@ const validateLogin = () => {
   .then(r => r.json());
 }
 
+const animalList = () => {
+  return fetch(`http://localhost:3000/animal`)
+  .then(r => {
+    if (r.ok) return r.json();
+    throw new Error('Não foi possível listar os animais!')
+  });
+}
+
 export const clientService = {
   newProfile,
-  validateLogin
+  validateLogin,
+  animalList
 }
