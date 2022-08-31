@@ -16,6 +16,14 @@ const newProfile = (email, name, password) => {
   });
 }
 
+const validateNewProfile = () => {
+  return fetch('http://localhost:3000/profile')
+  .then(r => {
+    if (r.ok) return r.json();
+    throw new Error('Não foi possível realizar o cadastro.')
+  });
+}
+
 const validateLogin = () => {
   return fetch('http://localhost:3000/profile')
   .then(r => {
@@ -35,5 +43,6 @@ const animalList = () => {
 export const clientService = {
   newProfile,
   validateLogin,
-  animalList
+  animalList,
+  validateNewProfile
 }
