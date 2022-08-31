@@ -13,18 +13,18 @@ passwordIcons.forEach(passwordIcon => passwordIcon.addEventListener('click', (e)
 const $form = document.querySelector('[data-form]');
 
 (() => {
-  $form.addEventListener('submit', (e) => {
-    createProfile(e);
+  $form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    try {
+      const email = e.target.querySelector('[data-input="email"]').value;
+      const name =  e.target.querySelector('[data-input="name"]').value;
+      const password =  e.target.querySelector('[data-input="password"]').value;
+
+      await clientService.newProfile(email, name, password);
+    } catch(err) {
+      console.log(err);
+      alert('Desculpe! Não foi possível criar o perfil! Tente novamente mais tarde!');
+    }
     $form.reset();
   });
 })();  
-
-function createProfile(e) {
-  e.preventDefault();
-  const email = e.target.querySelector('[data-input="email"]').value;
-  const name =  e.target.querySelector('[data-input="name"]').value;
-  const password =  e.target.querySelector('[data-input="password"]').value;
-
-  clientService.newProfile(email, name, password);
-
-}

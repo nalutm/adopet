@@ -10,19 +10,25 @@ const newProfile = (email, name, password) => {
       password: password
     })
   })
-  .then(r => r.body);
+  .then(r => {
+    if (r.ok) return r.body;
+    throw new Error('Não foi possível criar o perfil.')
+  });
 }
 
 const validateLogin = () => {
   return fetch('http://localhost:3000/profile')
-  .then(r => r.json());
+  .then(r => {
+    if (r.ok) return r.json();
+    throw new Error('Não foi possível realizar o login.')
+  });
 }
 
 const animalList = () => {
   return fetch(`http://localhost:3000/animal`)
   .then(r => {
     if (r.ok) return r.json();
-    throw new Error('Não foi possível listar os animais!')
+    throw new Error('Não foi possível listar os animais.')
   });
 }
 
