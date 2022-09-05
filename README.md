@@ -47,6 +47,10 @@ The challenge, then, is to create, from a figma model, the website that must con
 ### Status
 Finalized
 
+### Links
+Source code: https://github.com/nalutm/adopet;
+Site:
+
 ### Autoria
 - Linkedin - [Nayara Luiza Moraes](https://www.linkedin.com/in/nayara-luiza-moraes-9a9382b5/)
 
