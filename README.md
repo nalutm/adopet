@@ -33,12 +33,13 @@ The challenge, then, is to create, from a figma model, the website that must con
 
 ### Mobile
 <div align="center">
-  <img src="./docs/screenshot-mobile.jpg" alt="Screenshot layout mobile">
-  <img src="./docs/screenshot-mobile-active.jpg" alt="Screenshot layout mobile menu ativo">
+  <img src="./docs/screenshot-mobile.png" alt="Screenshot layout mobile">
 </div>
 
 ### Desktop
-![screenshot desktop layout](./docs/screenshot-desktop.png)
+<div align="center">
+  <img src="./docs/screenshot-desktop.png" alt="Screenshot layout mobile">
+</div>
 
 ## My Process
 - Built using JavaScritp and json-server to create an API.
