@@ -6,6 +6,9 @@ This is a solution to the [Alura Challenge Front-end 4ª edição](https://www.a
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
+- [Screenshot](#screenshot)
+  - [Mobile](#mobile)
+  - [Desktop](#mobile)
 - [My process](#my-process)
   - [Status](#status)
 - [Author](#author)
@@ -27,9 +30,10 @@ The challenge, then, is to create, from a figma model, the website that must con
 **It is very important that the site is responsive** to give customers the ease of shopping through mobile devices.
 
 ## My Process
+- Built using JavaScritp and json-server to create an API.
 
 ### Status
-In progress
+Finalized
 
 ### Autoria
 - Linkedin - [Nayara Luiza Moraes](https://www.linkedin.com/in/nayara-luiza-moraes-9a9382b5/)
