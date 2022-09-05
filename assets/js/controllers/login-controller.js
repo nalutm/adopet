@@ -19,7 +19,7 @@ submitBtn.addEventListener('click', async (e) => {
       email.classList.add('input--invalid');
     } else {
       console.log('Login realizado com sucesso!');
-      window.location.href = './home.html';
+      window.location.href = '/pages/home.html';
     }
   } catch(err) {
     console.log(err);

@@ -12,7 +12,7 @@ inputs.forEach(input => input.addEventListener('focusout', async (e) => {
       if (profileExists) {
         alert('O email já foi cadastrado!');
       } else {
-        window.location.href = './home.html';
+        window.location.href = '/pages/home.html';
       }
     } catch (err) {
       console.log(err);
