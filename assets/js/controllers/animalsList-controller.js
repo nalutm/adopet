@@ -1,6 +1,4 @@
-import {
-  clientService
-} from "../service/client-service.js";
+import { clientService } from "../service/client-service.js";
 
 const createNewLi = (name, age, size, temper, city, id) => {
   const newAnimalLi = document.createElement('li');

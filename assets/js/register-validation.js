@@ -1,13 +1,9 @@
-//Como tenho diversos inputs, é interessante criar um objeto em que correlaciono o tipo de input à sua validação 
-
 const errorTypes = [
   'valueMissing',
   'typeMismatch',
   'patternMismatch',
   'customError'
 ];
-
-//objeto que vai guardar todas as mensagens de erro para mostrar de acordo com o tipo de erro e também conforme o tipo de input
 
 const errorMsg = {
   email: {
@@ -31,8 +27,6 @@ const errorMsg = {
 const validators = {
   confirmPassword: input => validatePassword(input)
 }
-
-//Função genérica que será chamada para todos os inputs e fazer uma verificação em relação a qual é o tipo de input para saber qual verificação chamar 
 
 export function validate(input) {
   const inputType = input.dataset.input;

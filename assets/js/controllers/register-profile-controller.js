@@ -1,12 +1,6 @@
-import {
-  clientService
-} from "../service/client-service.js";
-import {
-  validate
-} from "../register-validation.js";
-import {
-  showPassword
-} from "../show-password.js";
+import { clientService } from "../service/client-service.js";
+import { validate } from "../register-validation.js";
+import { showPassword } from "../show-password.js";
 
 const inputs = document.querySelectorAll('[data-input]');
 inputs.forEach(input => input.addEventListener('focusout', async (e) => {
