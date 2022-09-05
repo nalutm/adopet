@@ -29,6 +29,17 @@ The challenge, then, is to create, from a figma model, the website that must con
 
 **It is very important that the site is responsive** to give customers the ease of shopping through mobile devices.
 
+##Screenshot
+
+### Mobile
+<div align="center">
+  <img src="./docs/screenshot-mobile.jpg" alt="Screenshot layout mobile">
+  <img src="./docs/screenshot-mobile-active.jpg" alt="Screenshot layout mobile menu ativo">
+</div>
+
+### Desktop
+![screenshot desktop layout](./docs/screenshot-desktop.png)
+
 ## My Process
 - Built using JavaScritp and json-server to create an API.
 
