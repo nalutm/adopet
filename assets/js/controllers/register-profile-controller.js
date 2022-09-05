@@ -11,7 +11,8 @@ inputs.forEach(input => input.addEventListener('focusout', async (e) => {
       const profileExists = profiles.some(profile => profile.email === e.target.value);
       if (profileExists) {
         alert('O email já foi cadastrado!');
-        window.location.href = './login.html';
+      } else {
+        window.location.href = './home.html';
       }
     } catch (err) {
       console.log(err);
