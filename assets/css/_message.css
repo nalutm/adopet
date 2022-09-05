@@ -10,6 +10,7 @@
   flex-direction: column;
   margin: 24px 0 16px 0;
   padding: 32px 16px;
+  z-index: 500;
   width: 80%;
 }
 
