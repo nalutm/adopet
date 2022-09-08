@@ -22,3 +22,12 @@
   position: absolute;
   top: 315px;
 }
+
+.footer__link {
+  color: var(--gray);
+  font-weight: 600;
+}
+
+.footer__link:hover {
+  color: var(--blue);
+}
